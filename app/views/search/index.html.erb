@@ -1,0 +1,71 @@
+This is our search form
+
+
+<%= form_for :search do |f| %>
+	<%= f.text_field :terms %>
+	<%= f.submit 'Search!' %>
+<% end %>
+
+<%= form_for(@searchform) do |f| %>
+  <% if @searchform.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@searchform.errors.count, "error") %> prohibited this searchform from being saved:</h2>
+
+      <ul>
+      <% @searchform.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<form role="form">
+  <div class= "container-fluid">
+      <div class="row">
+        
+        <div id="headphones">
+          <img src="http://www.klickpush.com/wp-content/uploads/2014/10/kp-music.png" alt >
+        </div>
+        
+        <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :song_ %><br>
+            <%= f.text_field :song_ %>
+          </div>
+          
+          <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :name %><br>
+            <%= f.text_field :name %>
+          </div>
+            <div class="clearfix visible-sm-block"></div>
+          
+          <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :genre %><br>
+            <%= f.text_field :genre %>
+          </div> 
+            <div class="clearfix visible-md-block"></div>
+          
+          <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :hottness %><br>
+            <%= f.number_field :hottness %>
+          </div>
+              <div class="clearfix visible-sm-block"></div>
+              <div class="clearfix visible-lg-block"></div>
+
+          <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :currency %><br>
+            <%= f.number_field :currency %>
+          </div>
+          <div class="field form-group col-sm-6 col-md-4 col-lg-3">
+            <%= f.label :discovery %><br>
+            <%= f.text_field :discovery %>
+          </div>
+          
+            <div class="clearfix visible-sm-block"></div> 
+            <div class="clearfix visible-md-block"></div>
+          <br>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+        </div>
+      </div>
+      
+    <% end %>

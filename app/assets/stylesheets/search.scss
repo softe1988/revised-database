@@ -1,0 +1,28 @@
+// Place all the styles related to the searchforms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-color: #ffffff;
+	color: #ffb400;
+	background-image: url("http://www.klickpush.com/wp-content/uploads/2014/10/kp-music.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: right;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	margin: 40px;
+
+
+}
+.form-group {
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	color: #014c6b;
+}
+
+.actions {
+	color: #014c6b;
+}
+
