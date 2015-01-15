@@ -6,3 +6,8 @@
   </div>
 
 You just searched for <%= params['search']['terms'] %>
+
+
+<% @tracks.each do |track| %>
+	<%= track.name %><br>
+<% end %>

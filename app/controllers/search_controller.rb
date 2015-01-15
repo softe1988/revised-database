@@ -5,7 +5,8 @@ class SearchController < ApplicationController
 	end
 
 	def create
-
+		binding.pry
+		@tracks = Track.where(:name => /#{params['search']['terms']}/)
 	end
 
 end

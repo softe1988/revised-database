@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'kaminari', '~> 0.16.1'
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,6 +26,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mongoid'
+
+gem 'pry'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
